@@ -126,14 +126,14 @@ html, body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/violence-banner.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .banner2 {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/sex-assult-banner.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 .fade-banner .carousel-arrow {
