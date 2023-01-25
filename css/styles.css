@@ -219,6 +219,38 @@ html, body {
     position: relative;
   }
 
+  .footer-area {
+    background: #1a1919;
+  }
+
+  .img-footer {
+    width: 80px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .foot-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  .foot-list li {
+     line-height: 2em;
+  }
+
+  .foot-list li a {
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .foot-list li a:hover {
+    color: white;
+  }
+
   /* .mission-list li span {
     position: absolute;
     top: 0;
