@@ -72,6 +72,24 @@ html, body {
     font-weight: 300;
 }
 
+.social-link .fab {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.social-link .fab:hover {
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg);
+}
+
+.site-text {
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.7em;
+}
+
 .site-header {
     background: #65066C;
     padding-top: 6px;
@@ -104,10 +122,22 @@ html, body {
     background: white !important;
     border-radius: 0px;
     border: 1px solid #FB0304 !important;
+    box-shadow: 0 80px 0 0  white inset, 0 -80px 0 0  white inset;
 }
 
 .navbar {
     background: white;
+}
+
+/* Fixed Navbar on Scroll */
+
+.navbar.static {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .navbar .navbar-brand img {
@@ -122,18 +152,126 @@ html, body {
     color: #db0b0b;
 }
 
+/* Navbar Toggler Styles */
+
+.navbar .toggle-btn {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  padding-bottom: 0px !important;
+  padding-top: 18px !important;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .toggle-btn .toggle1 {
+  width: 26px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #db0b0b;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn .toggle2 {
+  width: 26px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #db0b0b;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn .toggle3 {
+  width: 26px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #db0b0b;
+  transition: 0.3s all ease-in-out;
+}
+
+
+.navbar .toggle-btn.opened .toggle1 {
+  width: 26px;
+  height: 3px;
+  transform: rotate(40deg);
+  background: #db0b0b;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn.opened .toggle2 {
+  width: 0px;
+  height: 0px;
+  margin-bottom: 0px;
+  display: none;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar .toggle-btn.opened .toggle3 {
+  width: 26px;
+  height: 3px;
+  margin-top: -8px;
+  margin-bottom: 5px;
+  transform: rotate(-40deg);
+  background: #db0b0b;
+  transition: 0.3s all ease-in-out;
+}
+
+/* Banner Styles */
+
 .banner1 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/violence-banner.jpg) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/ngo-black-ban2.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
     padding-top: 120px;
 }
 
 .banner2 {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/sex-assult-banner.jpg) no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/black-people-three.jpg) no-repeat center;
     background-size: cover;
     min-height: 500px;
     padding-top: 120px;
+}
+
+.banner3 {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)) , url(../img/end-rape-three.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 120px;
+}
+
+
+.btn-banner {
+  background: #db0b0b;
+  color: white;
+  border-radius: 0px;
+  border: 1px solid #db0b0b;
+  font-size: 18px;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.btn-banner:hover {
+  color: #db0b0b !important;
+  background: white !important;
+  border: 1px solid white !important;
+  box-shadow: 0 80px 0 0  white inset, 0 -80px 0 0  white inset;
+}
+
+.btn-read {
+  background: #db0b0b;
+  color: white;
+  border-radius: 0px;
+  border: 1px solid #db0b0b;
+  font-size: 18px;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.btn-read:hover {
+  color: #db0b0b !important;
+  background: white !important;
+  border: 1px solid #db0b0b !important;
+  box-shadow: 0 80px 0 0  white inset, 0 -80px 0 0  white inset;
 }
 
 .fade-banner .carousel-arrow {
@@ -196,6 +334,14 @@ html, body {
     background: white;
   }
 
+  .banner-header {
+    font-size: 50px;
+  }
+
+  .banner-text {
+    font-size: 18px;
+  }
+
   .mission-area .mission-bg {
     background: #65066C;
     height: 100%;
@@ -210,14 +356,79 @@ html, body {
     background: white;
   }
 
-  /* .mission-list {
+  .mission-list {
     list-style-type: none;
     padding-inline-start: 0px;
-  } */
+  }
 
   .mission-list li {
     position: relative;
+    line-height: 1.7em;
+    margin: 10px 0px 10px 0px;
   }
+
+   .mission-list li .bullet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 20px;
+    font-size: 10px;
+    color: #db0b0b;
+   }
+
+   .mission-list li .text {
+    margin-left: 20px;
+    font-size: 16px;
+   }
+
+   .hover-header {
+    transition: all 0.5s ease-in-out;
+   }
+
+   .red-bot {
+    background: #db0b0b;
+    width: 50px;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+   }
+
+   .hover-header:hover .red-bot {
+     width: 100px;
+   }
+
+   /* What we do area */
+
+   .offer-area {
+    background: white;
+    box-shadow: 0 3px 10px #6b6b6be7;
+    cursor: pointer;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+   }
+
+   .offer-icon span {
+    background: #db0b0b;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+   }
+
+   /* .offer-area:hover {
+     margin-top: -10px;
+     background: #65066C;
+   } */
+
+   /* .offer-area:hover .offer-icon span {
+    background: white;
+    color: #65066C;
+   }
+
+   .offer-area:hover h4 {
+    color: white;
+   } */
 
   .footer-area {
     background: #1a1919;
@@ -249,6 +460,25 @@ html, body {
 
   .foot-list li a:hover {
     color: white;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #db0b0b;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+  }
+  
+  #myBtn:hover {
+    background-color: #db0b0b;
   }
 
   /* .mission-list li span {
