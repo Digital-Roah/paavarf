@@ -428,7 +428,92 @@ html, body {
 
    .offer-area:hover h4 {
     color: white;
+   } */ 
+
+   /* .achievement-area {
+    background: #e9acee;
    } */
+
+   .achieve-area {
+    border-left: 3px solid #db0b0b;
+    min-height: 90px;
+    background: white;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+   }
+
+   /* Carousel Slider Center Mode */
+
+   .my-slider .slider-arrow {
+    border: 0;
+    background: #db0b0b;
+    display: none !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .my-slider:hover .slider-arrow {
+    display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .my-slider .slider-arrow.next {
+    right: 0;
+  }
+
+  .myslider-dots {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myslider-dots li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  .myslider-dots li > button {
+    width: 8px;
+    height: 10px;
+    border: none;
+    background: #65066C;
+    font-size: 0px;
+    /* color: #65066C; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .myslider-dots li.slick-active > button {
+    background: #db0b0b;
+  }
+
+  .slider-item .slider-area {
+    width: 90%;
+  }
+
+  .slider-item .slider-area .img-slider {
+    width: 100%;
+    /* height: 200px; */
+  }
+
+  .project-slide {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .project-slide:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
 
   .footer-area {
     background: #1a1919;
@@ -436,6 +521,24 @@ html, body {
 
   .img-footer {
     width: 80px;
+  }
+
+  .btn-more {
+    background: #db0b0b;
+    color: white;
+    border-radius: 0px;
+    border: 1px solid #db0b0b;
+    font-size: 14px;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+  }
+  
+  .btn-more:hover {
+    color: #db0b0b !important;
+    background: white !important;
+    border: 1px solid #db0b0b !important;
+    box-shadow: 0 80px 0 0  white inset, 0 -80px 0 0  white inset;
   }
 
   .footer-text {

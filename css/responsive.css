@@ -1,17 +1,25 @@
 @media (max-width:480px) {
     .banner1 {
-        padding-top: 100px;
+        padding-top: 105px;
     }
     
     .banner2 {
-        padding-top: 100px;
+        padding-top: 105px;
     }
     
     .banner3 {
-        padding-top: 100px;
+        padding-top: 105px;
     }
 
     .site-text {
         font-size: 15px;
+      }
+
+      .banner-header {
+        font-size: 45px;
+      }
+    
+      .banner-text {
+        font-size: 17.5px;
       }
 }
