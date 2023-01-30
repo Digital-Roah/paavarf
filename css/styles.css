@@ -499,6 +499,8 @@ html, body {
 
   .slider-item .slider-area {
     width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .slider-item .slider-area .img-slider {
