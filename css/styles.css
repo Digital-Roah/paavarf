@@ -8,8 +8,48 @@ html, body {
 /* #2B2A28 - black */
 /* #FF7F00 - Orange */
 
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: #ffffff;
+}
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.4;
+    }
+  }
+
 .text-averia {
     font-family: 'Averia Serif Libre', cursive;
+}
+
+.text-barlow {
+  font-family: 'Barlow', sans-serif;
 }
 
 .text-heebo {
@@ -397,6 +437,17 @@ html, body {
      width: 100px;
    }
 
+   .white-bot {
+    background: white;
+    width: 50px;
+    height: 2px;
+    transition: all 0.5s ease-in-out;
+   }
+
+   .hover-header:hover .white-bot {
+     width: 100px;
+   }
+
    /* What we do area */
 
    .offer-area {
@@ -517,6 +568,97 @@ html, body {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   }
 
+  .testimonial-area {
+    background: linear-gradient(#5e0564d3 , #49034ed3) , url(../img/black-people-four.jpg) no-repeat center fixed;
+    background-size: cover;
+    min-height: 500px;
+    padding-bottom: 50px;
+  }
+
+  .testi-slider {
+    position: relative;
+  }
+
+  .testi-slider button.prev {
+    right: 60px;
+}
+
+  .testi-slider button.next {
+    right: 0;
+}
+
+.testi-slider button.testi-arrow {
+    position: absolute;
+    border: 0;
+    padding: 0;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    color: white;
+    background: none;
+    margin: 0 auto;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+.testi-slider button.testi-arrow:hover {
+  color: #db0b0b;
+  border: 1px solid white;
+  background: white;
+}
+
+.testi-slider button.testi-arrow:focus {
+  color: #db0b0b;
+  border: 1px solid white;
+  background: white;
+}
+
+.img-testi {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.paa-group {
+  font-family: 'Raleway', sans-serif;
+  color: #1a1919;
+}
+
+.paa-group .paa-control {
+  border-radius: 0px !important;
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.paa-group .paa-control[placeholder] {
+  color: #757575 !important;
+}
+
+.paa-group .paa-control:focus {
+  box-shadow: none;
+  border-color: #db0b0b;
+  color: #db0b0b;
+}
+
+.img-member {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+/* .testi-card-area {
+
+} */
+
   .footer-area {
     background: #1a1919;
   }
@@ -584,6 +726,16 @@ html, body {
   
   #myBtn:hover {
     background-color: #db0b0b;
+  }
+
+  .social-area a {
+    color: white;
+    font-size: 18px;
+  }
+
+  .copyright-text {
+    font-size: 13px;
+    color: white;
   }
 
   /* .mission-list li span {

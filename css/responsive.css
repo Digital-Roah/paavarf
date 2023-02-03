@@ -1,4 +1,11 @@
 @media (max-width:480px) {
+
+      /* Center the loader */
+      #loader {
+        left: 40%;
+        top: 40%;
+      }
+
     .banner1 {
         padding-top: 105px;
     }
