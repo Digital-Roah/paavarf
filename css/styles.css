@@ -749,3 +749,20 @@ html, body {
     background-size: cover;
     min-height: 500px;
 } */
+
+
+/* Other Pages Banners */
+.other-banners {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)) , url(../img/black-people-four.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 400px;
+  padding-top: 100px;
+}
+
+.other-banners h1 {
+  font-size: 42px;
+}
+
+.other-banners p {
+  font-size: 17px;
+}
