@@ -155,6 +155,7 @@ html, body {
     background: #FB0304;
     border-radius: 0px;
     border: 1px solid #FB0304;
+    transition:all 0.8s, color 0.3s 0.3s;
 }
 
 .btn-donate:hover {
@@ -284,9 +285,7 @@ html, body {
   border-radius: 0px;
   border: 1px solid #db0b0b;
   font-size: 18px;
-  -webkit-transition: ease-in-out 0.5s;
-  -moz-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  transition:all 0.8s, color 0.3s 0.3s;
 }
 
 .btn-banner:hover {
@@ -302,9 +301,7 @@ html, body {
   border-radius: 0px;
   border: 1px solid #db0b0b;
   font-size: 18px;
-  -webkit-transition: ease-in-out 0.5s;
-  -moz-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  transition:all 0.8s, color 0.3s 0.3s;
 }
 
 .btn-read:hover {
@@ -673,9 +670,7 @@ html, body {
     border-radius: 0px;
     border: 1px solid #db0b0b;
     font-size: 14px;
-    -webkit-transition: ease-in-out 0.5s;
-    -moz-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
+    transition:all 0.8s, color 0.3s 0.3s;
   }
   
   .btn-more:hover {

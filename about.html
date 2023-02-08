@@ -59,7 +59,7 @@
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> -->
-        <ul class="navbar-toggler toggle-btn d-md-none"  data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <ul class="navbar-toggler toggle-btn d-lg-none"  data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
         <li class="toggle1"></li>
         <li class="toggle2"></li>
@@ -108,9 +108,9 @@
      <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h1 class="text-white text-uppercase" id="head-area" data-wow-duration="1000">About Us</h1>
-                <p class="text-white text-raleway mt-2" id="text-area" data-wow-duration="1000" data-wow-delay="0.3s">Get more acquinted with Paaavarf. Learn more about our Mission and Vision Statements, Team Members, Achievements, Partners and so on. </p>
-                <div class="wow fadeInUp" id="btn-area" data-wow-duration="1000" data-wow-delay="0.6s">
+                <h1 class="text-white text-uppercase wow" id="head-area" data-wow-duration="1000">About Us</h1>
+                <p class="text-white text-raleway mt-2 wow" id="text-area" data-wow-duration="1000" data-wow-delay="0.3s">Get more acquinted with Paaavarf. Learn more about our Mission and Vision Statements, Team Members, Achievements, Partners and so on. </p>
+                <div class="wow" id="btn-area" data-wow-duration="1000" data-wow-delay="0.6s">
                 <a href="#learn" type="button" class="btn btn-banner text-bree mt-2 px-3">Learn More</a>
             </div>
             </div>
@@ -585,17 +585,20 @@ $('.testi-slider').slick({
            $(window).load(function() {
              // Animate loader off screen
              $(".se-pre-con").fadeOut(700);
+             $('#head-area').addClass('fadeInUp');
+             $('#text-area').addClass('fadeInUp');
+             $('#btn-area').addClass('fadeInUp');
            });
          </script>
 
          <!-- Add FadeIn Class after Laod -->
-         <script>
+         <!-- <script>
             $(document).ready(function() {
                 $('#head-area').addClass('wow fadeInUp');
              $('#text-area').addClass('wow fadeInUp');
              $('#btn-area').addClass('wow fadeInUp');
             });
-         </script>
+         </script> -->
 </body>
 
 </html>
